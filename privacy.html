@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy - Floor Check</title>
+<meta name="description" content="How Floor Check handles your data: your trips and pay stay on your phone." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%23176B4A'/%3E%3Cpath d='M136 226 L222 312 L382 152' fill='none' stroke='%23F6F7F5' stroke-width='54' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='92' y1='358' x2='420' y2='358' stroke='%23F5B731' stroke-width='40' stroke-linecap='round'/%3E%3C/svg%3E">
+<!--
+  Floor Check's policy (2026-10-29; section 6 "Creator codes" added 2026-11-04 with the creator attribution port),
+  written from SPEC 6.3 and the build: no account, no backend of its own, no analytics, backups off. Network calls:
+  the public rate-file GET (M2), Google Play Billing, and for an install with a creator code the partner service's
+  code check and install ping and the RevenueCat creator_* attributes (section 6).
+  Filled for the public site 2026-11-07 (developer name and support email; RevenueCat named in section 5).
+  If a build adds any other service, add a section here and update Data safety first.
+-->
+<style>
+  :root { --brand:#176B4A; --ink:#111827; --soft:#4b5563; --line:#e5e7eb; --bg:#f9fafb; --card:#ffffff; --head:#f3f4f6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --brand:#7CCBA2; --ink:#f3f4f6; --soft:#9ca3af; --line:#374151; --bg:#111827; --card:#1f2937; --head:#1f2937; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         color:var(--ink); background:var(--bg); line-height:1.65; }
+  .bar { border-bottom:1px solid var(--line); padding:24px 16px; background:var(--card); }
+  .bar .in { max-width:760px; margin:0 auto; }
+  .bar a { color:var(--brand); text-decoration:none; font-size:14px; }
+  .bar h1 { margin:8px 0 2px; font-size:26px; letter-spacing:-.02em; }
+  .bar p { margin:0; color:var(--soft); font-size:14px; }
+  .wrap { max-width:760px; margin:0 auto; padding:24px 16px 72px; overflow-wrap:anywhere; }
+  h2 { font-size:19px; margin:30px 0 8px; }
+  ul, ol { padding-left:22px; }
+  li { margin:6px 0; }
+  .note { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  a { color:var(--brand); }
+  footer { color:var(--soft); font-size:13px; margin-top:36px; border-top:1px solid var(--line); padding-top:18px; }
+</style>
+</head>
+<body>
+  <div class="bar"><div class="in">
+    <p>Floor Check</p>
+    <h1>Privacy Policy</h1>
+    <p>Effective: 2026-11-07</p>
+  </div></div>
+  <div class="wrap">
+    <p class="note">This policy explains what Floor Check (the "app", Android package com.retinue.floorcheck) does with
+      your information. The app is made by Wao App Studios (BN 9804636), Lagos, Nigeria, trading as Retinue ("we", "us"). Contact:
+      <a href="mailto:support.retinue@gmail.com">support.retinue@gmail.com</a>.</p>
+
+    <h2>1. The short version</h2>
+    <ul>
+      <li>Floor Check has <strong>no account and no login</strong>. We do not collect your trips or your pay.</li>
+      <li>The trip files, pay statements, screenshots and numbers you open or type stay <strong>on your phone</strong>.</li>
+      <li>No analytics SDK, no ads, no advertising ID, no location, no contacts.</li>
+      <li>Apart from Google Play purchases (section 5), the one thing that can leave your phone is a creator's code, if you came from a creator's link or typed one (section 6).</li>
+      <li>We never sell or share your information.</li>
+    </ul>
+
+    <h2>2. What stays on your phone</h2>
+    <p>Your settings (where you drive, your pay period), the trips and pay periods you check, the column
+      mappings you confirm and a few simple counters (for example the date you first opened the app and how many
+      files you imported) are kept in the app's private storage on your phone. They are <strong>not sent to us or
+      anyone else</strong>. Android backup is turned off for the app, so this data is not copied to a cloud
+      backup. "Delete all data" in Settings removes it; uninstalling the app removes it too.</p>
+
+    <h2>3. Files you open and things you share</h2>
+    <p>When you open a file, the app reads it on your phone through Android's file picker or share sheet. The app
+      never uploads it. If you choose to share something from the app (a Field check, the Diagnostics counters,
+      an export of your data or a claim pack PDF), Android's share sheet sends it only where you choose.</p>
+
+    <h2>4. The rate table</h2>
+    <p>To keep the published rates current, the app may download a public rate file from our static web host.
+      The request carries no information about you, no identifier and no trip data. The host's ordinary server
+      logs (such as the IP address and time of a request) are kept by the host, and we do not use them.</p>
+
+    <h2>5. Purchases</h2>
+    <p>If you start the Full Audit subscription, the payment is handled by <strong>Google Play</strong> under
+      <a href="https://policies.google.com/privacy">Google's privacy policy</a>. The app checks with Google Play
+      on your phone whether the subscription is active. To do that the app uses RevenueCat, a subscription service
+      that works for us: it receives your Google Play purchase record and a random app user number made on your phone
+      (not your name, email address or an advertising ID), and tells the app whether Full Audit is active
+      (<a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>). <strong>We never see or store your card details.</strong></p>
+
+    <h2>6. Creator codes</h2>
+    <p>Floor Check pays creators who recommend it a share of the subscriptions their followers buy. If you installed
+      the app from a creator's link, or you type a creator's code on the Full Audit screen, the app keeps that code
+      on your phone and does three things with it, and nothing else:</p>
+    <ul>
+      <li>It asks our creator program service whether the code exists and whether its 30-day free trial is open. The
+        request carries the code and the app's name, nothing about you or your trips.</li>
+      <li>Once per install, it tells that service that the code brought an install: the code, how it arrived (a link
+        or typed), the app's name and a random install number made on your phone for this purpose. It is not your
+        phone's ID or an advertising ID, and the service stores it only in a scrambled (hashed) form.</li>
+      <li>In a version of the app that sells Full Audit, the code is also stored with RevenueCat, the service that tells
+        the app whether your subscription is active, as soon as the app starts (whether or not you subscribe), so
+        that the creator can be paid their share if you do.</li>
+    </ul>
+    <p>Like any web request, these reach the service with your network address; the service stores only a scrambled
+      form that changes every day, to stop abuse, and we do not use the web server's ordinary logs. A code never unlocks anything by itself: Full Audit comes only from a Google
+      Play purchase. "Delete all data" in Settings removes the code from your phone and from RevenueCat. Without a
+      creator code, none of this happens.</p>
+
+    <h2>7. What we do not do</h2>
+    <p>No analytics or tracking SDKs, no advertising, no advertising ID, no location, no access to your contacts,
+      no account, and no selling of personal data. Floor Check never contacts a rideshare platform or a government
+      agency for you, and never files anything.</p>
+
+    <h2>8. Children</h2>
+    <p>Floor Check is made for adult drivers and is not directed to children. We do not knowingly collect
+      information from anyone.</p>
+
+    <h2>9. Your rights</h2>
+    <p>We hold no account and nothing that tells us who you are: your data is on your phone and under your control.
+      A creator code is removed with "Delete all data" (section 6). Questions:
+      <a href="mailto:support.retinue@gmail.com">support.retinue@gmail.com</a>. We reply within 30 days.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>If the app ever starts sending any other information anywhere, we will update this policy and the Google Play
+      Data safety form before that version is released, and change the effective date above.</p>
+
+    <h2>11. Contact</h2>
+    <p>Wao App Studios (BN 9804636), Lagos, Nigeria, trading as Retinue &middot; <a href="mailto:support.retinue@gmail.com">support.retinue@gmail.com</a></p>
+
+    <footer>Floor Check &middot; rideshare pay vs the published minimum</footer>
+  </div>
+</body>
+</html>

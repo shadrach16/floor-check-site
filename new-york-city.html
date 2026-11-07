@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<title>TLC Driver Pay Rates from 1 March 2026 | Floor Check</title>
+<meta name="description" content="The TLC&#x27;s minimum pay per trip for drivers on the high-volume apps (35 RCNY 59D-22) in plain words: $1.283 a mile plus $0.681 a minute from 1 March 2026.">
+<meta name="theme-color" content="#176B4A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%23176B4A'/%3E%3Cpath d='M136 226 L222 312 L382 152' fill='none' stroke='%23F6F7F5' stroke-width='54' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='92' y1='358' x2='420' y2='358' stroke='%23F5B731' stroke-width='40' stroke-linecap='round'/%3E%3C/svg%3E">
+<!--
+  Floor Check landing page (2026-10-29). Static on purpose: no scripts, no forms, no cookies, no analytics, no
+  third-party requests (the CSP above enforces it). Sources: App-Forge apps/floor-check/SPEC.md 0.2, 0.3, 5.4, R2;
+  the title phrase autocompleted on Google web (US), probes/web-suggest-law-terms-us.json. The store button uses this
+  page's tagged link from launch-kit/links.csv. Until launch the button says "Pre-register on Google Play"; at launch change it
+  to "Get it on Google Play" on every page.
+-->
+<style>
+:root{--primary:#176B4A;--on-primary:#FFFFFF;--red:#B3261E;--red-soft:#FBEAE9;--amber-text:#8A5300;--amber-soft:#FFF1D6;
+--ink:#171C1C;--muted:#596460;--surface:#F6F7F5;--card:#FFFFFF;--tint:rgba(23,107,74,.05);--line:rgba(23,107,74,.14);
+--track:rgba(23,107,74,.12);--hair:rgba(23,107,74,.09);--lift:0 1px 2px rgba(23,107,74,.06),0 8px 24px rgba(23,107,74,.08);
+color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--primary:#7CCBA2;--on-primary:#00391F;--red:#F2B8B5;--red-soft:#5C1A16;
+--amber-text:#F5B731;--amber-soft:#4F3300;--ink:#E3E8E8;--muted:#A9B4B4;--surface:#111413;--card:#1B1F1E;
+--tint:rgba(124,203,162,.07);--line:rgba(124,203,162,.18);--track:rgba(124,203,162,.18);--hair:rgba(124,203,162,.14);--lift:none}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--surface);color:var(--ink);font:400 16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",
+Roboto,Helvetica,Arial,sans-serif;overflow-wrap:break-word}
+strong,b,caption{font-weight:600}
+a{color:var(--primary);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--primary);outline-offset:3px;border-radius:4px}
+.wrap{max-width:672px;margin:0 auto;padding:0 16px}
+.wide{max-width:1040px}
+.top{padding:8px 0}
+.brand{display:inline-flex;align-items:center;gap:12px;min-height:48px;color:var(--ink);text-decoration:none;font-weight:600}
+.brand svg{width:32px;height:32px;flex:none}
+h1{font-size:32px;line-height:1.2;font-weight:600;letter-spacing:-.01em;margin:24px 0 16px}
+h2{font-size:20px;line-height:1.3;font-weight:600;margin:0 0 16px}
+p,ol,ul{margin:0 0 16px}
+ol,ul{padding-left:24px}
+li{margin:0 0 8px}
+section{margin-top:48px}
+.btn{display:flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:12px;
+background:var(--primary);color:var(--on-primary);font-weight:600;text-decoration:none;text-align:center;
+box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 4px 16px rgba(23,107,74,.24)}
+.btn:hover{filter:brightness(1.06)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.inflow{margin-top:24px}
+.dock{display:none}
+.card{background:var(--card);border-radius:20px;padding:20px;box-shadow:0 0 0 1px var(--hair),var(--lift)}
+.small{font-size:13px;color:var(--muted)}
+.src{font-size:13px;color:var(--muted);margin:12px 0 0}
+.src a{color:inherit}
+.fig{margin-top:24px}
+.fig .label{font-size:13px;font-weight:600;color:var(--muted);margin:0 0 8px}
+.fig hr{border:0;height:1px;background:var(--line);margin:20px 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0}
+.stats.two{grid-template-columns:repeat(2,1fr)}
+.stats div{display:flex;flex-direction:column-reverse;justify-content:flex-end}
+.stats dd{margin:0;font-size:32px;font-weight:600;line-height:1.2;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.stats dt{font-size:13px;color:var(--muted);margin-top:4px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+table+table{margin-top:24px}
+caption{text-align:left;padding:0 0 8px}
+th,td{text-align:right;padding:12px 0 12px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th:first-child,td:first-child{text-align:left;padding-left:0}
+thead th{font-size:13px;font-weight:400;color:var(--muted);padding-top:0}
+thead th+th{white-space:nowrap}
+tbody th{font-weight:400}
+td{font-weight:600}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:4px 12px;border-radius:999px;font-size:13px;font-weight:600;
+line-height:1.5}
+.chip svg{width:12px;height:12px}
+.chip.red{background:var(--red-soft);color:var(--red)}
+.chip.amber{background:var(--amber-soft);color:var(--amber-text)}
+.example{margin:24px 0 0}
+.example .row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.verdict{font-size:20px;font-weight:600;color:var(--red);margin:12px 0 16px;font-variant-numeric:tabular-nums}
+.bar{position:relative;height:12px;border-radius:6px;background:var(--track);margin:8px 0 0}
+.fill{position:absolute;left:0;top:0;bottom:0;border-radius:6px;background:var(--red)}
+.p65{width:65%}.p83{width:83%}
+.tick{position:absolute;left:87%;top:-6px;width:2px;height:24px;border-radius:1px;background:var(--ink)}
+.bar-labels{display:flex;justify-content:space-between;gap:12px;margin:12px 0 0;font-size:13px;font-variant-numeric:tabular-nums}
+.bar-labels .paid{color:var(--red);font-weight:600}
+.example figcaption{margin:12px 0 0}
+.check{border-radius:20px;padding:20px;background:var(--amber-soft);margin:24px 0 0}
+.check p:last-child{margin:0}
+.check .chip{padding:0;background:none}
+.notice{border-radius:20px;padding:20px;background:var(--tint)}
+.notice p:last-child{margin:0}
+.places{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.places li{margin:0}
+.place{display:flex;align-items:center;gap:16px;min-height:72px;padding:16px 20px;border-radius:20px;background:var(--card);
+color:var(--ink);text-decoration:none;box-shadow:0 0 0 1px var(--hair),var(--lift)}
+.place:hover{box-shadow:0 0 0 1px var(--primary),var(--lift)}
+.place>span{flex:1}
+.place strong{display:block;font-size:20px;line-height:1.3}
+.place .small{display:block;margin-top:4px}
+.place .wait{color:var(--amber-text)}
+.chev{width:24px;height:24px;color:var(--primary);flex:none}
+footer{margin-top:64px;padding:24px 0 48px;box-shadow:0 -1px 0 var(--line)}
+footer ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;column-gap:24px}
+footer li{margin:0}
+footer a{display:inline-block;padding:12px 0;color:var(--ink)}
+footer a[aria-current]{color:var(--muted);text-decoration:none}
+@media (max-width:719px){.inflow{display:none}body{padding-bottom:80px}
+.dock{display:block;position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));
+background:var(--surface);box-shadow:0 -1px 0 var(--line),0 -8px 24px rgba(23,107,74,.08)}}
+@media (min-width:720px){section{margin-top:64px}.btn{display:inline-flex}}
+@media (min-width:960px){.hero{display:grid;grid-template-columns:1fr 400px;gap:64px;align-items:center}
+.hero .example{margin:0}.places{grid-template-columns:1fr 1fr}.wide .notice{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.wide .notice p{margin:0}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><rect width="512" height="512" rx="112" fill="#176B4A"/><path d="M136 226 L222 312 L382 152" fill="none" stroke="#F6F7F5" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/><line x1="92" y1="358" x2="420" y2="358" stroke="#F5B731" stroke-width="40" stroke-linecap="round"/></svg>Floor Check</a>
+</div></header>
+<main class="wrap">
+<h1>TLC driver pay rates from 1 March 2026</h1>
+<p>New York City sets a minimum for every trip on the high-volume apps, not an hourly wage. The Taxi and Limousine Commission (TLC) publishes it under rule 35 RCNY 59D-22; this page is not the TLC's.</p>
+<div class="card fig">
+    <p class="label">Standard trips · from 1 March 2026</p>
+    <dl class="stats two"><div><dt>per mile</dt><dd>$1.283</dd></div><div><dt>per minute</dt><dd>$0.681</dd></div></dl>
+</div>
+<p class="src">Source: <a href="https://www.nyc.gov/site/tlc/about/driver-pay-rates.page">TLC, Driver Pay Rates</a> and <a href="https://www.nyc.gov/assets/tlc/downloads/pdf/driver_pay_rules_6_6_25.pdf">the adopted rule</a>, read 28 Oct 2026.</p>
+<a class="btn inflow" href="https://play.google.com/store/apps/details?id=com.retinue.floorcheck&amp;referrer=utm_source%3Dsite-nyc%26utm_medium%3Dweb%26utm_campaign%3Dfloor-check-launch">Pre-register on Google Play</a>
+
+<section aria-labelledby="rule">
+  <h2 id="rule">The rule</h2>
+  <p>For each trip, the app company must pay you at least the per-mile rate times the trip miles plus the per-minute rate times the trip minutes.</p>
+  <p>Wheelchair-accessible vehicles get a higher per-mile rate. Trips that start in the city and end outside it get the out-of-town rates. The rates change every 1 March.</p>
+  <p>To complain: email the TLC at DriverProtection@tlc.nyc.gov.</p>
+</section>
+
+<section aria-labelledby="all">
+  <h2 id="all">Every trip type</h2>
+  <div class="card">
+    <table>
+      <caption>From 1 March 2026</caption>
+      <thead><tr><th scope="col">Trip</th><th scope="col">Per mile</th><th scope="col">Per minute</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Standard</th><td>$1.283</td><td>$0.681</td></tr>
+        <tr><th scope="row">Wheelchair-accessible</th><td>$1.601</td><td>$0.681</td></tr>
+        <tr><th scope="row">Out-of-town</th><td>$1.757</td><td>$0.725</td></tr>
+        <tr><th scope="row">Out-of-town, wheelchair-accessible</th><td>$2.193</td><td>$0.725</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="src">Same source, read 28 Oct 2026.</p>
+</section>
+
+<section aria-labelledby="app">
+  <h2 id="app">What the app does with your trips</h2>
+  <p>New York City does not require a receipt file, so Floor Check reads your trip screenshots or the minutes, miles and pay you type. Every trip turns green, red or amber against the TLC rate for its date, with the rule on each card. Nothing leaves your phone. No login.</p>
+  <figure class="card example" aria-label="Example result card with made-up figures">
+    <div class="row"><span class="chip red"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>Below the minimum</span><span class="small">Made-up example</span></div>
+    <p class="verdict">Below by $0.75</p>
+    <div class="bar" role="img" aria-label="Paid $16.90 against a minimum of $17.65"><span class="fill p83"></span><span class="tick"></span></div>
+    <div class="bar-labels" aria-hidden="true"><span class="paid">Paid $16.90</span><span>Min $17.65</span></div>
+    <figcaption class="small">NYC 2026 · 4.2 mi × $1.283 + 18 min × $0.681</figcaption>
+  </figure>
+  <a class="btn inflow" href="https://play.google.com/store/apps/details?id=com.retinue.floorcheck&amp;referrer=utm_source%3Dsite-nyc%26utm_medium%3Dweb%26utm_campaign%3Dfloor-check-launch">Pre-register on Google Play</a>
+</section>
+
+<section aria-label="Disclaimer"><div class="notice">
+  <p><strong>Estimate, not legal advice.</strong> Floor Check compares your pay with the published rates. Check with the TLC before you file anything.</p>
+  <p><strong>Not affiliated with Uber, Lyft or any agency.</strong> Floor Check is an independent app.</p>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <nav aria-label="Floor Check pages"><ul>
+    <li><a href="index.html">All places</a></li>
+    <li><a href="washington.html">Washington</a></li>
+    <li><a href="new-york-city.html" aria-current="page">New York City</a></li>
+    <li><a href="minnesota.html">Minnesota</a></li>
+    <li><a href="california.html">California</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+  </ul></nav>
+</div></footer>
+<div class="dock"><a class="btn" href="https://play.google.com/store/apps/details?id=com.retinue.floorcheck&amp;referrer=utm_source%3Dsite-nyc%26utm_medium%3Dweb%26utm_campaign%3Dfloor-check-launch">Pre-register on Google Play</a></div>
+</body>
+</html>
